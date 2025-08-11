@@ -1,0 +1,26 @@
+Que 2:
+• Two different employees can have dependents with the same name.
+	• Example: Employee A and Employee B can both have a dependent named "Alice."
+• An employee cannot have two dependents with the same name because (Essn, Dependent_name) must be unique.
+	• Example: If Essn = 333445555 already has a dependent named "Alice," they cannot add another "Alice".
+
+Que 3:
+The operation Insert into Department (dname, dnumber) values (‘Human Rescource’, 2) violates a foreign key constraint.
+• Foreign Key Violation: The Mgr_ssn attribute in the Department table is a foreign key that references the Ssn attribute (primary key) in the Employee table. Because Mgr_ssn is not nullable, a value must be provided.
+The insert statement does not provide a Mgr_ssn value so will insert a null value into this column, thus violating the not null constraint on the Mgr_ssn attribute
+
+Que 4:
+The SQL statement Delete from Employee Where Fname = ‘Franklin’ will work. It will delete the employee record where the first name is 'Franklin'. Based on the provided instance, the statement will delete the record of Franklin T. Wong with Ssn = 333445555.
+
+
+Que 5:
+Yes, this query can be completed using the current schema:
+	• Step 1: Identify employees working on Project "Reorganization" (Pnumber = 30) from Works_on.
+	• Step 2: Find their Dno from the Employee table.
+	• Step 3: Retrieve department names and managers (Mgr_ssn) from the Department table.
+	• Step 4: Use Mgr_ssn to retrieve manager details from the Employee table.
+
+Que 6:
+
+
+
